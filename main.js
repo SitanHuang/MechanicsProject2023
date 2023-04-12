@@ -82,10 +82,10 @@ function calculateScenario(file, contLoad) {
   b.solve(L_beam * 10) // resolution: 10th of an inch
 
   // reactions:
-  assert.deepEqual(b.grid.filter(x => x.x == 0 && Math.round(x.v * 1e3) / 1e3).length, 1);
-  assert.deepEqual(b.grid.filter(x => x.x == L_beam && Math.round(x.v * 1e3) / 1e3).length, 1);
-  let Ay = b.grid.filter(x => x.x == 0 && Math.round(x.v * 1e3) / 1e3)[0].v;
-  let By = -b.grid.filter(x => x.x == L_beam && Math.round(x.v * 1e3) / 1e3)[0].v;
+  let Ay = b.soln.pin0;
+  let By = b.soln.pin1;
+
+  console.log(b.soln)
 
   let vs = b.grid.map(x => x.v);
   let ms = b.grid.map(x => x.m);
