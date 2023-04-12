@@ -85,8 +85,6 @@ function calculateScenario(file, contLoad) {
   let Ay = b.soln.pin0;
   let By = b.soln.pin1;
 
-  console.log(b.soln)
-
   let vs = b.grid.map(x => x.v);
   let ms = b.grid.map(x => x.m);
   let ys = b.grid.map(x => x.y);
