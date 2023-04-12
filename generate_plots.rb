@@ -13,7 +13,9 @@ Dir.glob("#{input_dir}/*.csv").each do |csv_file|
   base_name = File.basename(csv_file, '.csv')
   output_file = "#{output_dir}/#{base_name}.svg"
 
-  cmd = "gnuplot -e \"basename='#{base_name}'; inputfile='#{csv_file}'\" #{gnuplot_script}"
+  desc = File.read("#{input_dir}/#{base_name}.txt")
+
+  cmd = "gnuplot -e \"plottext='#{desc}';basename='#{base_name}'; inputfile='#{csv_file}'\" #{gnuplot_script}"
 
   puts cmd
 

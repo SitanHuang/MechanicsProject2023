@@ -91,13 +91,15 @@ function calculateScenario(file, contLoad) {
   let ms = b.grid.map(x => x.m);
   let ys = b.grid.map(x => x.y);
 
-  console.log(`Processed scenario "${file}":
-    Ay: ${engNot(Ay)} lb, By: ${engNot(By)} lb,
+  let text = `Ay: ${engNot(Ay)} lb, By: ${engNot(By)} lb,
     V: ${engNot(Math.min(...vs))} lb to ${engNot(Math.max(...vs))} lb
     M: ${engNot(Math.min(...ms))} lb to ${engNot(Math.max(...ms))} lb
-    Y: ${engNot(Math.min(...ys))} in to ${engNot(Math.max(...ys))} in`);
+    Y: ${engNot(Math.min(...ys))} in to ${engNot(Math.max(...ys))} in`;
+  console.log(`Processed scenario "${file}":
+    ${text}`);
 
   fs.writeFileSync("csvs/" + file + ".csv", toCSV(b.grid))
+  fs.writeFileSync("csvs/" + file + ".txt", text.replace(/ +/g, ' ').replace(/\n/g, ' '))
 }
 
 /*
