@@ -11,7 +11,7 @@ set xtics nomirror 12
 
 set multiplot layout 3,1 title "Configuration " . basename
 
-set label plottext at screen 0.14, screen 0.97 boxed font ",10"
+set label plottext at screen 0.14, screen 0.9665 boxed font ",10"
 
 # Shear diagram
 set xlabel "Position (in)"
