@@ -1,7 +1,7 @@
 set datafile separator ","
 set key outside
 
-set terminal svg size 600,800 enhanced font 'Verdana,10' background rgb 'white'
+set terminal svg size 600,800 enhanced font 'Times New Roman,10' background rgb 'white'
 
 set grid front
 
