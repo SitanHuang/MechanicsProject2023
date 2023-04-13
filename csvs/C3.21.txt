@@ -1,1 +1,1 @@
-Ay: 10.91e3 lb, By: 8.57e3 lb,  V: -10.91e3 lb to 8.57e3 lb  M: -626.61e3 lb to 0 lb  Y: 0 in to 1.27 in
+Ay: 5.76e3 lb, By: 3.42e3 lb,  V: -5.76e3 lb to 3.42e3 lb  M: -290.60e3 lb to 0 lb  Y: 0 in to 0.58 in

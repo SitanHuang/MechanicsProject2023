@@ -9,7 +9,7 @@ gnuplot_script = 'generator.gnuplot'
 
 FileUtils.mkdir_p(output_dir) unless Dir.exist?(output_dir)
 
-Dir.glob("#{input_dir}/*.csv").each do |csv_file|
+Dir.glob("#{input_dir}/C*.csv").each do |csv_file|
   base_name = File.basename(csv_file, '.csv')
   output_file = "#{output_dir}/#{base_name}.svg"
 
