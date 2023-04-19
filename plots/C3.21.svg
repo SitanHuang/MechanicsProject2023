@@ -48,7 +48,7 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M67.50,60.01 L67.50,228.67 L529.49,228.67 L529.49,60.01 L67.50,60.01 Z  '/>	<g transform="translate(84.00,30.06)" stroke="none" fill="black" font-family="Times New Roman" font-size="10.00"  text-anchor="start" style='filter:url(#textbox)'>
-		<text xml:space="preserve"><tspan font-family="Times New Roman"  xml:space="preserve">Ay: 5.76e3 lb, By: 3.42e3 lb,  V: -5.76e3 lb to 3.42e3 lb  M: -290.60e3 lb to 0 lb  Y: 0 in to 0.58 in</tspan></text>
+		<text xml:space="preserve"><tspan font-family="Times New Roman"  xml:space="preserve">Ay: 5.76e3 lb, By: 3.42e3 lb,    V: -5.76e3 lb to 3.42e3 lb  M: -290.60e3 lb to 0 lb  Y: 0 in to 0.58 in</tspan></text>
 	</g>
 	<path stroke='rgb(  0,   0,   0)'  d='M67.51,127.46 L529.50,127.46  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -858,7 +858,7 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M81.50,321.67 L81.50,490.34 L529.49,490.34 L529.49,321.67 L81.50,321.67 Z  '/>	<g transform="translate(84.00,30.06)" stroke="none" fill="black" font-family="Times New Roman" font-size="10.00"  text-anchor="start" style='filter:url(#textbox)'>
-		<text xml:space="preserve"><tspan font-family="Times New Roman"  xml:space="preserve">Ay: 5.76e3 lb, By: 3.42e3 lb,  V: -5.76e3 lb to 3.42e3 lb  M: -290.60e3 lb to 0 lb  Y: 0 in to 0.58 in</tspan></text>
+		<text xml:space="preserve"><tspan font-family="Times New Roman"  xml:space="preserve">Ay: 5.76e3 lb, By: 3.42e3 lb,    V: -5.76e3 lb to 3.42e3 lb  M: -290.60e3 lb to 0 lb  Y: 0 in to 0.58 in</tspan></text>
 	</g>
 	<path stroke='rgb(  0,   0,   0)'  d='M81.51,321.66 L529.50,321.66  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -1616,7 +1616,7 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M60.50,583.34 L60.50,752.00 L529.49,752.00 L529.49,583.34 L60.50,583.34 Z  '/>	<g transform="translate(84.00,30.06)" stroke="none" fill="black" font-family="Times New Roman" font-size="10.00"  text-anchor="start" style='filter:url(#textbox)'>
-		<text xml:space="preserve"><tspan font-family="Times New Roman"  xml:space="preserve">Ay: 5.76e3 lb, By: 3.42e3 lb,  V: -5.76e3 lb to 3.42e3 lb  M: -290.60e3 lb to 0 lb  Y: 0 in to 0.58 in</tspan></text>
+		<text xml:space="preserve"><tspan font-family="Times New Roman"  xml:space="preserve">Ay: 5.76e3 lb, By: 3.42e3 lb,    V: -5.76e3 lb to 3.42e3 lb  M: -290.60e3 lb to 0 lb  Y: 0 in to 0.58 in</tspan></text>
 	</g>
 	<path stroke='rgb(  0,   0,   0)'  d='M60.51,751.99 L529.50,751.99  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">

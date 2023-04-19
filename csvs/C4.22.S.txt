@@ -1,0 +1,1 @@
+Ay: 6.76e3 lb, By: 640.20 lb,  Cy: 13.93e3 lb  V: -6.76e3 lb to 8.44e3 lb  M: -226.28e3 lb to 232.44e3 lb  Y: -0.02 in to 0.16 in

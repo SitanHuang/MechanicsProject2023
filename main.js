@@ -119,7 +119,7 @@ function findClosestToZero(grid, key) {
 
 let overallTable = 'File,Ay,By,min(V),max(V),min(M),max(M),min(Y),max(Y),x(v=0),x(m=0),x(v=min(V)),x(v=max(V)),x(m=min(M)),x(m=max(M))\n';
 
-function calculateScenario(file, contLoad) {
+function calculateScenario(file, contLoad, changeInSupport=false) {
   let b = new Beam()
   b.units = 'US'
 
@@ -131,7 +131,12 @@ function calculateScenario(file, contLoad) {
   b.anchorLeft = 'free'
   b.anchorRight = 'free'
   b.addPin(0)
+  
+  if (changeInSupport)
+    b.addPin(L_beam - 8 * 12)
+
   b.addPin(L_beam) // same for roller except the upward wind
+
 
   b.contLoad = contLoad
 
@@ -139,7 +144,8 @@ function calculateScenario(file, contLoad) {
 
   // reactions:
   let Ay = b.soln.pin0;
-  let By = b.soln.pin1;
+  let By = changeInSupport ? b.soln.pin2 : b.soln.pin1;
+  let Cy = changeInSupport ? b.soln.pin1 : b.soln.pin2;
 
   let ys = b.grid.map(x => x.y);
 
@@ -152,6 +158,7 @@ function calculateScenario(file, contLoad) {
   overallTable += `${file},${engNot(Ay)},${engNot(By)},${engNot(vmin)},${engNot(vmax)},${engNot(mmin)},${engNot(mmax)},${engNot(Math.min(...ys))},${engNot(Math.max(...ys))},${vIntercept},${mIntercept},${xvmin},${xvmax},${xmmin},${xmmax}\n`;
 
   let text = `Ay: ${engNot(Ay)} lb, By: ${engNot(By)} lb,
+    ${changeInSupport ? `Cy: ${engNot(Cy)} lb` : ''}
     V: ${engNot(vmin)} lb to ${engNot(vmax)} lb
     M: ${engNot(mmin)} lb to ${engNot(mmax)} lb
     Y: ${engNot(Math.min(...ys))} in to ${engNot(Math.max(...ys))} in`;
@@ -200,3 +207,6 @@ calculateScenario("C6.10", (x) => 0.9 * D_tot(x) + 1.6 * W_1(x)); // upwards win
 calculateScenario("C6.20", (x) => 0.9 * D_tot(x) + 1.6 * W_2(x)); // downwards wind
 
 fs.writeFileSync("csvs/summary.csv", overallTable)
+
+calculateScenario("C3.22.S", (x) => 1.2 * D_tot(x) + 1.6 * S(x) + 0.8 * W_2(x), true);
+calculateScenario("C4.22.S", (x) => 1.2 * D_tot(x) + 1.6 * W_2(x) + 0.5 * S(x), true);
